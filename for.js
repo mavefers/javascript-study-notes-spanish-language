@@ -19,7 +19,7 @@
 // Loop "while" (mientras):
 // Mientras se cumpla la condicion, se ejecutara la tarea que tenemos entre llaves.
 
-// ESTRUCTURA:
+// ESTRUCTURA / SINTAXIS :
 
 let condicion;
 
@@ -114,6 +114,10 @@ doWhile(10); //Este parametro (10) hace que la condicion sea falsa. Fin. // Solo
 
 
 //          Loop 'for'
+// El loop 'for' tiene la misma funcion que 'while', pero poniendo 
+// En el loop 'for', la variable a tirar se declara dentro de los parametros del 'for'.
+// Es muy comun usar y encontrar 'for' en arrays.
+// Con 'for' pueden hacer codigo mas eficiente y reducir el gasto en procesamiento.
 
 //SINTAXIS:
 
@@ -122,6 +126,7 @@ doWhile(10); //Este parametro (10) hace que la condicion sea falsa. Fin. // Solo
 // }
 
 //EJEMPLO
+
 for (i = 0; i < 3; i++) {
     console.log(i);
 }
@@ -145,3 +150,11 @@ loopFor(5);
 //3
 //4
 //5
+
+//
+
+// Estructura 'Array'.
+
+// Es una estructura de datos en la cual puedes almacenar en slots, espacios o huecos, diversos datos, como variables, datos, otras estructuras de datos, etc.
+// Es como una comoda donde en cada cajon puedes guardar, un numero, un texto, otro array, otro objeto, etc.
+// Son varios elementos guardados en una sola variable, con la que se puede trabajar con ella.
