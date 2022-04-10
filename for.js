@@ -162,4 +162,8 @@ loopFor(5);
 
 //
 
-// Template Strings (ES6)
+// Template Strings (ES6) :
+//
+//Se trata de una nueva función de un grupo de nuevos tipos de funciones relacionados al string, que se llama 'Template Strings'.
+//Este grupo de funciones, llamado “Template Strings” son traídos en la nueva actualización de ES6.
+//Cabe recalcar que ES6 no está disponible en todos los navegadores, y uno de los navegadores que sí soporta la actualización ES6, es Chrome, a partir de su versión 41.
