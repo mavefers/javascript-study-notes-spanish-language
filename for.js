@@ -158,3 +158,8 @@ loopFor(5);
 // Es una estructura de datos en la cual puedes almacenar en slots, espacios o huecos, diversos datos, como variables, datos, otras estructuras de datos, etc.
 // Es como una comoda donde en cada cajon puedes guardar, un numero, un texto, otro array, otro objeto, etc.
 // Son varios elementos guardados en una sola variable, con la que se puede trabajar con ella.
+
+
+//
+
+// Template Strings (ES6)
