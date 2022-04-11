@@ -162,8 +162,47 @@ loopFor(5);
 
 //
 
+
 // Template Strings (ES6) :
 //
 //Se trata de una nueva función de un grupo de nuevos tipos de funciones relacionados al string, que se llama 'Template Strings'.
 //Este grupo de funciones, llamado “Template Strings” son traídos en la nueva actualización de ES6.
 //Cabe recalcar que ES6 no está disponible en todos los navegadores, y uno de los navegadores que sí soporta la actualización ES6, es Chrome, a partir de su versión 41.
+
+// Es una cadena de string.
+// Se puede hacer un string multilinea con un solo codigo.
+// Se declaran utilizando los apostrofos de 1, (` `). NOTE: No es lo mismo `...` que '...'; este ultimo es incorrecto.
+// Source: https://www.computerhope.com/jargon/b/backquot.htm
+
+//SINTAXIS:
+var template = `hello world`;
+console.log(template);
+//IMPRIME:
+// hello world
+
+//Tambien reconoce los 'enters', 'break' o 'saltos de linea', para pasar a la siguiente linea:
+//SINTAXIS:
+var template = `hello
+world`;
+//THIS PRINTS:
+//hello
+//world
+
+//Tambien reconoce "tabulaciones", whitespace o espacios:
+//SINTAXIS
+var temple = `hello
+    <<< this is a whitespace
+world`;
+//this prints:
+//hello
+//  <<< this is a whilespace
+//world
+
+//INTERPOLACION
+
+
+
+// Source:
+// GENRAL:               https://freecodecamp.org/espanol/news/como-utilizar-la-interpolacion-de-cadenas-en-javascript/
+// PLANTILLAS LITERALES: https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Template_literals
+// INTERPOLACION:        https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Text_formatting
