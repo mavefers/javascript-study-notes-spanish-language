@@ -171,8 +171,9 @@ loopFor(5);
 
 // Es una cadena de string.
 // Se puede hacer un string multilinea con un solo codigo.
-// Se declaran utilizando los apostrofos de 1, (` `). NOTE: No es lo mismo `...` que '...'; este ultimo es incorrecto.
+// Se declaran utilizando comillas invertidas (` `). NOTE: No es lo mismo `...` que '...' o "..."; estos ultimos son incorrectos.
 // Source: https://www.computerhope.com/jargon/b/backquot.htm
+// https://www.w3schools.com/js/js_string_templates.asp
 
 //SINTAXIS:
 var template = `hello world`;
@@ -184,6 +185,7 @@ console.log(template);
 //SINTAXIS:
 var template = `hello
 world`;
+console.log(template);
 //THIS PRINTS:
 //hello
 //world
@@ -193,13 +195,24 @@ world`;
 var temple = `hello
     <<< this is a whitespace
 world`;
+console.log(temple);
 //this prints:
 //hello
 //  <<< this is a whilespace
 //world
 
 //INTERPOLACION
-
+// Es el acto de incrustar una expresion de JavaScript en una string o cadena de texto.
+// Es muy diferente la practica de *concatenar* a la de *interpolar*
+// Al *interpolar* solo estas generando 1 cadena de texto, string, como `texto1 ${expresion} texto1`.
+// Al *concatenar* estas generando mas de una cadena de texto, string, como "texto1" + variable + "texto2". No hay limite de concatenacion.
+// NOTA: La cadena de texto, o "string", no se rompe.
+//SINTAXIS:
+var name = "Dominick";
+var templ = `Hey ${name}! How's it going?`
+console.log(templ);
+//THIS PRINTS:
+//Hey Dominick! How's it going?
 
 
 // Source:
