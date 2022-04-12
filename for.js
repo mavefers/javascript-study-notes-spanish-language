@@ -171,15 +171,31 @@ loopFor(5);
 
 // Es una cadena de string.
 // Se puede hacer un string multilinea con un solo codigo.
-// Se declaran utilizando comillas invertidas (` `). NOTE: No es lo mismo `...` que '...' o "..."; estos ultimos son incorrectos.
+// Se declaran utilizando comillas invertidas o *backticks* (` `). NOTE: No es lo mismo `...` que '...' o "..."; estos ultimos son incorrectos.
 // Source: https://www.computerhope.com/jargon/b/backquot.htm
 // https://www.w3schools.com/js/js_string_templates.asp
 
 //SINTAXIS:
+`Hello world`
+
+//EXAMPLE:
 var template = `hello world`;
 console.log(template);
 //IMPRIME:
 // hello world
+
+//EXAMPLE2:
+console.log(`Bonsoir`);
+//THIS PRINT:
+//Bonsoir
+
+//Tambien reconoce todo tipos de expresiones, objetos, operaciones, etc.
+//EJEMPLO:
+var arrayPeople = ["alumnos", "profesores"];
+let lugar1 = "la clase";
+console.log(`Hay ${4+6} ${arrayPeople[0]} y ${1906/953} ${arrayPeople[1]} en ${lugar1}.`); //Aqui se esta usando *Operaciones Aritmeticas*, *Arrays*, *Objetos*.
+//THIS PRINTS:
+//Hay 10 alumnos y 2 profesores en la clase.
 
 //Tambien reconoce los 'enters', 'break' o 'saltos de linea', para pasar a la siguiente linea:
 //SINTAXIS:
@@ -192,6 +208,8 @@ console.log(template);
 
 //Tambien reconoce "tabulaciones", whitespace o espacios:
 //SINTAXIS
+
+//EXAMPLE:
 var temple = `hello
     <<< this is a whitespace
 world`;
@@ -201,14 +219,17 @@ console.log(temple);
 //  <<< this is a whilespace
 //world
 
+
 //INTERPOLACION
-// Es el acto de incrustar una expresion de JavaScript en una string o cadena de texto.
+// Es el acto de incrustar *expresiones* de JavaScript en una string o cadena de texto.
 // Es muy diferente la practica de *concatenar* a la de *interpolar*
 // Al *interpolar* solo estas generando 1 cadena de texto, string, como `texto1 ${expresion} texto1`.
 // Al *concatenar* estas generando mas de una cadena de texto, string, como "texto1" + variable + "texto2". No hay limite de concatenacion.
 // NOTA: La cadena de texto, o "string", no se rompe.
-//SINTAXIS:
-var name = "Dominick";
+
+
+//EXAMPLE:
+let name = "Dominick";
 var templ = `Hey ${name}! How's it going?`
 console.log(templ);
 //THIS PRINTS:
