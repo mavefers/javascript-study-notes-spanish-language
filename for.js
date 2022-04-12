@@ -165,13 +165,15 @@ loopFor(5);
 
 // Template Strings (ES6) :
 //
-//Se trata de una nueva función de un grupo de nuevos tipos de funciones relacionados al string, que se llama 'Template Strings'.
+//Se trata de una nueva función de un grupo de nuevos tipos de funciones relacionados al *string* o *cadena de texto*, que se llama 'Template Strings'.
 //Este grupo de funciones, llamado “Template Strings” son traídos en la nueva actualización de ES6.
 //Cabe recalcar que ES6 no está disponible en todos los navegadores, y uno de los navegadores que sí soporta la actualización ES6, es Chrome, a partir de su versión 41.
 
 // Es una cadena de string.
+//En español los llaman "Plantillas literales".
+//Los *saltos de linea*, *espacios* y *whitepaces* son considerados desde del primer backtick *`* escrito.
 // Se puede hacer un string multilinea con un solo codigo.
-// Se declaran utilizando comillas invertidas o *backticks* (` `). NOTE: No es lo mismo `...` que '...' o "..."; estos ultimos son incorrectos.
+// Se declaran utilizando *comillas invertidas* o *backticks* (` `). NOTE: No es lo mismo `...` que '...' o "..."; estos ultimos son incorrectos.
 // Source: https://www.computerhope.com/jargon/b/backquot.htm
 // https://www.w3schools.com/js/js_string_templates.asp
 
@@ -198,13 +200,37 @@ console.log(`Hay ${4+6} ${arrayPeople[0]} y ${1906/953} ${arrayPeople[1]} en ${l
 //Hay 10 alumnos y 2 profesores en la clase.
 
 //Tambien reconoce los 'enters', 'break' o 'saltos de linea', para pasar a la siguiente linea:
-//SINTAXIS:
+//EXAMPLE:
 var template = `hello
 world`;
 console.log(template);
 //THIS PRINTS:
 //hello
 //world
+
+//EXAMPLE2:
+console.log(`
+hey
+    dude
+`);
+//THIS PRINTS:
+//
+//hey
+//  dude
+
+//EXAMPLE3:
+console.log(`
+hey
+    dude
+
+`);
+//THIS PRINTS:
+//
+//hey
+//  dude
+//
+
+//NOTE: En el ejemplo 3, podemos observar que se crea un salto de linea, y en el ejemplo 2, no.
 
 //Tambien reconoce "tabulaciones", whitespace o espacios:
 //SINTAXIS
