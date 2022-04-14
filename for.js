@@ -162,7 +162,12 @@ loopFor(5);
 
 //
 
+// // DEFINICIONES:
+// // Concatenar: Unir diferentes cadenas, una a continuacion de otra.  >    x + z
+// // Interpolar: Incrustar una cadena, dentro de otra.    >   bbbb ${a} bbbb
 
+
+//Template Literals (ES6) :
 // Template Strings (ES6) :
 //
 //Se trata de una nueva función de un grupo de nuevos tipos de funciones relacionados al *string* o *cadena de texto*, que se llama 'Template Strings'.
@@ -170,15 +175,22 @@ loopFor(5);
 //Cabe recalcar que ES6 no está disponible en todos los navegadores, y uno de los navegadores que sí soporta la actualización ES6, es Chrome, a partir de su versión 41.
 
 // Es una cadena de string.
-//En español los llaman "Plantillas literales".
+// En español los llaman "Plantillas literales".
+// ** Permite hacer cadenas de varias lineas.
+// ** Permite hacer interpolacion de cadenas con expresiones incrustadas
 //Los *saltos de linea*, *espacios* y *whitepaces* son considerados desde del primer backtick *`* escrito.
 // Se puede hacer un string multilinea con un solo codigo.
 // Se declaran utilizando *comillas invertidas* o *backticks* (` `). NOTE: No es lo mismo `...` que '...' o "..."; estos ultimos son incorrectos.
 // Source: https://www.computerhope.com/jargon/b/backquot.htm
 // https://www.w3schools.com/js/js_string_templates.asp
 
-//SINTAXIS:
+//SYNTAX1:
 `Hello world`
+//SYNTAX2:
+`string text 1
+string text 2`
+//SYNTAX3:
+`string text ${expresion} string text`
 
 //EXAMPLE:
 var template = `hello world`;
@@ -234,6 +246,8 @@ hey
 
 //Tambien reconoce "tabulaciones", whitespace o espacios:
 //SINTAXIS
+`string text 1
+    string text 2` // Aqui toma encuenta el whitespace, espacio o tabulador.
 
 //EXAMPLE:
 var temple = `hello
