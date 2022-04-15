@@ -155,9 +155,52 @@ loopFor(5);
 
 // Estructura 'Array'.
 
-// Es una estructura de datos en la cual puedes almacenar en slots, espacios o huecos, diversos datos, como variables, datos, otras estructuras de datos, etc.
+// Es una estructura de datos en la cual puedes almacenar en slots, espacios o huecos, diversos datos, como variables, objetos, otras estructuras de datos, etc.
 // Es como una comoda donde en cada cajon puedes guardar, un numero, un texto, otro array, otro objeto, etc.
 // Son varios elementos guardados en una sola variable, con la que se puede trabajar con ella.
+// ESTRUCTURA:
+// Signo de apertura y cierre: [...]
+// Se separan por una coma: ,
+// Posicion >>> [posicion0, posicion1, posicion2, posicion3]
+// En la *posicion*, los elementos se cuentan desde el numero 0, pasando a 1, 2, 3, y asi sucesivamente.
+// Cuando se determinan la cantidad de elementos, la ley de la *posicion* es nula, *pasando a contar desde el numero 1*.
+
+//SYNTAX1:
+[element1, element2]
+//SYNTAX2:
+[
+    element,
+    mundo
+]
+
+//SYNTAX2:
+let varArray1 = [element];
+//Para acceder al valor de un array, se ingresa a traves del *nombre de la variable*.
+
+//SYNTAX3:
+var varY = ["element1 (Posicion0)", "element2 (Posicion1)", "element3 (Posicion2)"]; //Cuando hay mas de un elemento, estos se separan con comas.
+
+//SYNTAX3:
+array.length
+//Sirve para saber cuantos elementos tiene el array.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //
