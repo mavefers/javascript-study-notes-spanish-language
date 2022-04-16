@@ -180,25 +180,47 @@ let varArray1 = [element];
 //SYNTAX3:
 var varY = ["element1 (Posicion0)", "element2 (Posicion1)", "element3 (Posicion2)"]; //Cuando hay mas de un elemento, estos se separan con comas.
 
-//SYNTAX3:
-array.length
+
+//METHODs
+
+//Length:
 //Sirve para saber cuantos elementos tiene el array.
 
+//SYNTAX4_METHOD1:
+array.length
+
+//EXAMPLE:
+let aMethod1 = ["andres", "betty", "carlos", x, y, z];
+console.log(aMethod1.length);
+//TTHIS PRINT:
+//6
+
+//
+
+array[0];
+//Sirve para acceder un elemento en especifico.
+//En *programacion* en general, el conteo inicia en 0 (cero), siempre.
+//EXAMPLE:
+console.log(aMethod1[1]);
+//THIS PRINT:
+//betty
+
+//EXAMPLE2:
+console.log(aMethod1[0]);
+//THIS PRINT:
+//andres
+
+//EXAMPLE3:
+console.log(aMethod1[2]);
+//THIS PRINT:
+//carlos
 
 
 
+//Method para manipular o moldear
+//Method .push :
 
-
-
-
-
-
-
-
-
-
-
-
+//Añade métodos o elementos al final de un array.
 
 
 
