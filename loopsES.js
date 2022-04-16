@@ -153,6 +153,8 @@ loopFor(5);
 
 //
 
+// ARRAY
+
 // Estructura 'Array'.
 
 // Es una estructura de datos en la cual puedes almacenar en slots, espacios o huecos, diversos datos, como variables, objetos, otras estructuras de datos, etc.
@@ -190,7 +192,7 @@ var varY = ["element1 (Posicion0)", "element2 (Posicion1)", "element3 (Posicion2
 array.length
 
 //EXAMPLE:
-let aMethod1 = ["andres", "betty", "carlos", x, y, z];
+let aMethod1 = ["andres", "betty", "carlos", "Xiao", "Yen", "Zio"];
 console.log(aMethod1.length);
 //TTHIS PRINT:
 //6
@@ -216,12 +218,84 @@ console.log(aMethod1[2]);
 //carlos
 
 
+//Method 2 para manipular o moldear.
 
-//Method para manipular o moldear
 //Method .push :
-
 //Añade métodos o elementos al final de un array.
+//SYNTAX:
+objeto.push(element);
 
+//EXAMPLE:
+var masMethod = aMethod1.push('Domingo');
+//* La nueva formacion de elementos se guarda en la variable *masMethod*.
+//
+console.log(masMethod);
+//THIS PRINTS:
+//andres, betty, carlos, Xiao, Yen, Zio, Domingo
+console.log(masMethod[6]);
+//THIS PRINTS:
+//Domingo
+
+
+//Method .pop :
+//Quita el ultimo metodo o elemento de la lista del array.
+//SYNTAX:
+objeto.pop(element); //No es necesario declarar el parametro. Puede escribirse como *objeto.pop()*, sin declarar parametro.
+objeto.pop();   // No es necesario el parametro, ya que escribiendo cualquier cosa, la funcion siempre será eliminar el ultimo elemento.
+//EXAMPLE:
+var menosMethod = addInicio.pop();   //Ambos ejemplos son lo mismo.
+var menosMethod = addInicio.pop('Domingo');  //Ambos ejemplos son lo mismo. No necesita declarar ningun parametro.
+console.log(menosMethod);
+//THIS PRINT:
+//andres, betty, carlos, Xiao, Yen, Zio     //Se le quito el ultimo elemento.
+
+
+//Method .unshift
+//Agrega un elemento al inicio  de la lista del array.
+//SYNTAX:
+objeto.unshift("element");
+//EXAMPLE:
+var addInicio = aMethod1.unshift('Mario');
+console.log(addInicio);
+//THIS PRINT:
+//Mario, andres, betty, carlos, Xiao, Yen, Zio
+console.log(addInicio[1]);
+//THIS PRINTS:
+//andres
+console.log(addInicio[0]);
+//THIS PRINTS:
+//Mario
+
+
+//Method .shift
+//Elimina el elemento que esta al inicio de la lista del Array.
+//NOTA: Asi coloques cualquier parametro como elemento, siempre borrará el primer elemento.
+//SYNTAX:
+objeto.shift();  //Al igual que el metodo *.pop*, el .shift no necesita pasarle nungun parametro, ya que siempre eliminara el primer elemento.
+//EXAMPLE:
+var dedInicio = addInicio(); //Ambos ejemplos son lo mismo.
+var dedInicio = addInicio('Mario'); //Ambos ejemplos son lo mismo. Aqui no se necesita pasar ningun parametro.
+console.log(dedInicio);
+//THIS PRINTS:
+//andres, betty, carlos, Xiao, Yen, Zio
+console.log(dedInicio[0]);
+//andres
+console.log(dedInicio[3]);
+//Xiao
+console.log(dedInicio[2]);
+//carlos
+
+
+//Method .indexOf
+//Sirve para saber la posicion, en el array, del elemento que se analizará, pasandolo en el parámetro.
+//NOTA: Cuando imprimimos, mediante el index (.indexOf), un elemento que no esta en la lista del array, el resultado es -1.
+//SYNTAX:
+objeto.indexOf(element);
+//EXAMPLE:
+var posicion = aMethod1.indexOf("betty");
+console.log(posicion);
+//THIS PRINTS:
+//1  //esto es un numero, indicando la posicion en la que se encuentra el elemento.
 
 
 
