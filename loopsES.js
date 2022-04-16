@@ -295,8 +295,12 @@ objeto.indexOf(element);
 var posicion = aMethod1.indexOf("betty");
 console.log(posicion);
 //THIS PRINTS:
-//1  //esto es un numero, indicando la posicion en la que se encuentra el elemento.
+//1  //< esto es un numero, indicando la posicion en la que se encuentra el elemento.
 
+//NOTA-ARRAY:
+//Los principales elementos de un array, son: Index, Elemento.
+// Los arrays pueden contener más arrays.
+//* Los arrays son mutables, es decir, sí puede aumentar y disminuir su longitud.
 
 
 //
