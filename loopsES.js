@@ -220,7 +220,7 @@ console.log(aMethod1[2]);
 
 //Method 2 para manipular o moldear.
 
-//Method .push :
+//Method .push() :
 //Añade métodos o elementos al final de un array.
 //SYNTAX:
 objeto.push(element);
@@ -237,7 +237,7 @@ console.log(masMethod[6]);
 //Domingo
 
 
-//Method .pop :
+//Method .pop() :
 //Quita el ultimo metodo o elemento de la lista del array.
 //SYNTAX:
 objeto.pop(element); //No es necesario declarar el parametro. Puede escribirse como *objeto.pop()*, sin declarar parametro.
@@ -250,7 +250,7 @@ console.log(menosMethod);
 //andres, betty, carlos, Xiao, Yen, Zio     //Se le quito el ultimo elemento.
 
 
-//Method .unshift
+//Method .unshift()
 //Agrega un elemento al inicio  de la lista del array.
 //SYNTAX:
 objeto.unshift("element");
@@ -267,7 +267,7 @@ console.log(addInicio[0]);
 //Mario
 
 
-//Method .shift
+//Method .shift()
 //Elimina el elemento que esta al inicio de la lista del Array.
 //NOTA: Asi coloques cualquier parametro como elemento, siempre borrará el primer elemento.
 //SYNTAX:
@@ -286,7 +286,7 @@ console.log(dedInicio[2]);
 //carlos
 
 
-//Method .indexOf
+//Method .indexOf()
 //Sirve para saber la posicion, en el array, del elemento que se analizará, pasandolo en el parámetro.
 //NOTA: Cuando imprimimos, mediante el index (.indexOf), un elemento que no esta en la lista del array, el resultado es -1.
 //SYNTAX:
@@ -297,10 +297,35 @@ console.log(posicion);
 //THIS PRINTS:
 //1  //< esto es un numero, indicando la posicion en la que se encuentra el elemento.
 
+
+//Method .concat()
+//Concatena elementos, 1 o más elementos, a la cadena del array.
+//SYNTAX:
+['a', 'b'].concat('c');
+//EXAMPLE:
+var addFruits = ['fresa', 'manzana', 'pera'].concat('uvas', 'sandia', 'mango');
+console.log(addFruits);
+//THIS PRINTS:
+//fresa, manzana, pera, uvas, sandias, mango
+
+
+//Method .join()
+//Coloca un elemento entre todos los espacios que hay entre los elementos del array.
+//SYNTAX:
+['a', 'b', 'c'].join(', ');
+//EXAMPLE:
+var entre = ['1', '2', '3', '4', '5'].join('; ');
+console.log(entre);
+//THIS PRINT:
+//1; 2; 3; 4; 5
+
+
 //NOTA-ARRAY:
 //Los principales elementos de un array, son: Index, Elemento.
 // Los arrays pueden contener más arrays.
 //* Los arrays son mutables, es decir, sí puede aumentar y disminuir su longitud.
+
+
 
 
 //
