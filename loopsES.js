@@ -1,4 +1,4 @@
-//NOTA: 'function' funciona para pasar el parametro, entre otras cosas mas.
+//NOTA: 'function' actúa pasando un parametro, como también actúa sin parámetros, entre otras cosas mas.
 
 // Loops:
 // Es una manera rapida y sencilla de poder hacer que un trabajo se repita de manera automatica dependiendo de una condicion.
@@ -14,6 +14,9 @@
 // > Inicializacion: Fija los valores con los que ejecutamos el blucle.
 // > Condicion de Permanencia: Hace que el loop continue hasta que la condicion deje de ser 'true' y la cadena se rompa.
 // > Actualizacion: Actualizacion de la Variable que controla esa condicion: El loop continua, utilizando diferentes datos. Ejm: i++
+
+
+//
 
 
 // Loop "while" (mientras):
@@ -324,6 +327,26 @@ console.log(entre);
 //Los principales elementos de un array, son: Index, Elemento.
 // Los arrays pueden contener más arrays.
 //* Los arrays son mutables, es decir, sí puede aumentar y disminuir su longitud.
+
+
+//
+
+
+//GENERAL EXAMPLE - ARRAY/FOR:
+var clubMario = ["Luigi", "Wario", "Yoshi", "Mario", "Bowser"];
+function saludarClub(clubMember){
+    console.log(`${clubMember}, eres parte del club!`)
+}
+for(i=0; i<clubMario.length; i++) {
+    saludarClub(clubMario[i]);
+}
+//THIS PRINTS:
+//Hola Luigi, eres parte del club!
+//Hola Wario, eres parte del club!
+//Hola Yoshi, eres parte del club!
+//Hola Mario, eres parte del club!
+//Hola Bowser, eres parte del club!
+
 
 
 
