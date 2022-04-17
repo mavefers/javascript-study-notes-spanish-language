@@ -117,7 +117,7 @@ doWhile(10); //Este parametro (10) hace que la condicion sea falsa. Fin. // Solo
 
 
 //          Loop 'for'
-// El loop 'for' tiene la misma funcion que 'while', pero poniendo 
+// El loop 'for' tiene la misma funcion que 'while', pero poniendo todos sus parámetros en una sola linea.
 // En el loop 'for', la variable a tirar se declara dentro de los parametros del 'for'.
 // Es muy comun usar y encontrar 'for' en arrays.
 // Con 'for' pueden hacer codigo mas eficiente y reducir el gasto en procesamiento.
@@ -153,6 +153,8 @@ loopFor(5);
 //3
 //4
 //5
+
+
 
 //
 
@@ -335,7 +337,7 @@ console.log(entre);
 //GENERAL EXAMPLE - ARRAY/FOR:
 var clubMario = ["Luigi", "Wario", "Yoshi", "Mario", "Bowser"];
 function saludarClub(clubMember){
-    console.log(`${clubMember}, eres parte del club!`)
+    console.log(`Hola ${clubMember}, eres parte del club!`)
 }
 for(i=0; i<clubMario.length; i++) {
     saludarClub(clubMario[i]);
@@ -347,6 +349,23 @@ for(i=0; i<clubMario.length; i++) {
 //Hola Mario, eres parte del club!
 //Hola Bowser, eres parte del club!
 
+//
+
+// LOOP    * for ... of *
+// Recorre todos los elementos de un Array. Desde el inicio hasta el final.
+// Cada elemento del Array *clubMario* será asignado en la misma variable que se declara en los parámetros de *for*.
+// Cada elemento del Array será asignado, uno por uno, en la misma variable.
+//Cada asignación se procesa de manera independiente, en cada cilo que pase, hasta que no hayan elementos dentro del Array.
+//SYNTAX:
+for(var clubMember of clubMario) {
+    saludarClub(clubMember);
+}
+//THIS PRINTS:
+//Hola Luigi, eres parte del club!
+//Hola Wario, eres parte del club!
+//Hola Yoshi, eres parte del club!
+//Hola Mario, eres parte del club!
+//Hola Bowser, eres parte del club!
 
 
 
