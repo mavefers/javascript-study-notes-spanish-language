@@ -351,6 +351,26 @@ for(i=0; i<clubMario.length; i++) {
 
 //
 
+var clubMario = ["Luigi", "Wario", "Yoshi", "Mario", "Bowser"];
+function saludarClub(clubMember){
+    for(i=0; i<clubMario.length; i++) {
+        console.log(`Hola ${clubMember[i]}, eres parte del club!`);
+    }
+}
+
+saludarClub(clubMario);
+
+//THIS PRINTS:
+//Hola Luigi, eres parte del club!
+//Hola Wario, eres parte del club!
+//Hola Yoshi, eres parte del club!
+//Hola Mario, eres parte del club!
+//Hola Bowser, eres parte del club!
+
+
+//
+
+
 // LOOP    * for ... of *
 // Recorre todos los elementos de un Array. Desde el inicio hasta el final.
 // Cada elemento del Array *clubMario* será asignado en la misma variable que se declara en los parámetros de *for*.
