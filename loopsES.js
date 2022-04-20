@@ -24,9 +24,9 @@
 
 // ESTRUCTURA / SINTAXIS :
 
-let condicion;
+let variable;
 
-while(condicion) { // siempre que se cumpla esta condicion,
+while(variableCondicion) { // siempre que se cumpla esta condicion,
     codigo          // se ejecutara este codigo.
 }
 
@@ -45,6 +45,9 @@ while (i < 11) {
          // En este caso, en el primer loop i=1, en el sgt loop i=2, y asi, hasta que la condicion deje de ser verdadera.
 }
 
+
+//EXAMPLE2:
+
 function loopWhile(num) { // 'num' es por donde pasan los parametros
     let i = 0; // declaramos la variable
     while (i < num) { // while es un bloque de codigos. "{}"
@@ -55,7 +58,7 @@ function loopWhile(num) { // 'num' es por donde pasan los parametros
 loopWhile(4);
 
 
-
+//EXAMPLE3:
 
 function intVar(num) {
     let i = 1; // empieza en 0, ya que 'i' es igual a '0'
@@ -72,6 +75,18 @@ intVar(4);
 //2
 //3
 //4
+
+
+//EXAMPLE4:
+var estudaintes = ["Maria", "Sergio", "Rose", "Daniel"];
+
+function saludarEstudiantes(estudiante){
+    console.log(`Hola ${estudiante}`)
+}
+while(estudaintes.length>0){
+    var estudiante = estudiantes.shift();
+}
+ 
 
 //
 
@@ -325,8 +340,17 @@ console.log(entre);
 //1; 2; 3; 4; 5
 
 
+//NOTA Method .push .pop .unshift .shift :
+
+// Cuando imprimes un array con los Metodos para agregar elementos, solo imprimiran la longitud de elementos que contiene el array.
+// array.unshift("elemento");        array.push("elemento");
+
+// Cuando imprimes un array con los Metodos para quitar elementos, imprime el elemento que corresponde y luego lo quita de la lista del array.
+// array.shift();       array.pop();
+
+
 //NOTA-ARRAY:
-//Los principales elementos de un array, son: Index, Elemento.
+//Las principales partes de un array, son: Index/posición, Elemento.
 // Los arrays pueden contener más arrays.
 //* Los arrays son mutables, es decir, sí puede aumentar y disminuir su longitud.
 
