@@ -78,15 +78,26 @@ intVar(4);
 
 
 //EXAMPLE4:
-var estudaintes = ["Maria", "Sergio", "Rose", "Daniel"];
+var estudiantes = ["Maria", "Sergio", "Rose", "Daniel"];
 
 function saludarEstudiantes(estudiante){
     console.log(`Hola ${estudiante}`)
 }
-while(estudaintes.length>0){
+while(estudiantes.length>0){
     var estudiante = estudiantes.shift();
+    saludarEstudiantes(estudiantes);
 }
+
+
+//EXAMPLE5:
  
+function saludarEstudiantes(estudiante){
+    while(estudiantes.length>0){
+        var estudiante = estudiantes.shift();
+        console.log(`Hola ${estudiante}`);
+    }
+}
+    saludarEstudiantes(estudiantes);
 
 //
 
@@ -187,6 +198,29 @@ loopFor(5);
 // En la *posicion*, los elementos se cuentan desde el numero 0, pasando a 1, 2, 3, y asi sucesivamente.
 // Cuando se determinan la cantidad de elementos, la ley de la *posicion* es nula, *pasando a contar desde el numero 1*.
 
+
+array[0];
+//Sirve para acceder un elemento en especifico.
+//En *programacion* en general, el conteo inicia en 0 (cero), siempre.
+
+//EXAMPLE:
+var aMethod1 = ["andres", "betty", "carlos", "Xiao", "Yen", "Zio"];
+console.log(aMethod1[1]);
+//THIS PRINT:
+//betty
+
+//EXAMPLE2:
+console.log(aMethod1[0]);
+//THIS PRINT:
+//andres
+
+//EXAMPLE3:
+console.log(aMethod1[2]);
+//THIS PRINT:
+//carlos
+
+
+//  Array
 //SYNTAX1:
 [element1, element2]
 //SYNTAX2:
@@ -217,25 +251,14 @@ console.log(aMethod1.length);
 //TTHIS PRINT:
 //6
 
-//
-
-array[0];
-//Sirve para acceder un elemento en especifico.
-//En *programacion* en general, el conteo inicia en 0 (cero), siempre.
-//EXAMPLE:
-console.log(aMethod1[1]);
-//THIS PRINT:
-//betty
-
 //EXAMPLE2:
-console.log(aMethod1[0]);
-//THIS PRINT:
-//andres
+function saludarEstudiantes(){
 
-//EXAMPLE3:
-console.log(aMethod1[2]);
-//THIS PRINT:
-//carlos
+}
+
+
+
+
 
 
 //Method 2 para manipular o moldear.
