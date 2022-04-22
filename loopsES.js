@@ -91,13 +91,13 @@ while(estudiantes.length>0){
 
 //EXAMPLE5:
  
-function saludarEstudiantes(estudiante){
+function saludarEstudiantes(){
     while(estudiantes.length>0){
         var estudiante = estudiantes.shift();
         console.log(`Hola ${estudiante}`);
     }
 }
-    saludarEstudiantes(estudiantes);
+    saludarEstudiantes();
 
 //
 
@@ -433,6 +433,15 @@ for(var clubMember of clubMario) {
 //Hola Yoshi, eres parte del club!
 //Hola Mario, eres parte del club!
 //Hola Bowser, eres parte del club!
+
+//EXAMPLE
+var students = ["Daniel", "Sergey", "Rose", "Carlos"];
+function greet(students) {
+  for (let student of students) {
+    console.log(`Hi ${student}!`);
+  }
+}
+greet(students);
 
 
 
