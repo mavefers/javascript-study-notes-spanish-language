@@ -16,9 +16,29 @@ var objeto = {
 
 
 //EXAMPLE:
-var miAuto = {
+let miAuto = {
     color: "Amarillo",
-    puertas: 4,
+    puertas: 5,
     marca: "Jeep",
     annio: 2016
 };
+
+//Para utilizar las variables que se encuentran dentro del objeto:
+
+miAuto.color; //Amarillo
+miAuto.puertas; //5
+miAuto.annio; //2016
+console.log(miAuto.marca); //Jeep
+
+
+//EXAMPLE2:
+let objetoLula = {
+    ser: "can",
+    color: "sal y pimienta",
+    nombre: "Lulú",
+    edad: 9,
+    peso: 11
+};
+
+console.log(`Tengo una ${objetoLula.ser} llamada ${objetoLula.nombre}, ella es de color ${objetoLula.color}, pesa ${objetoLula.peso} kilos y tiene ${objetoLula.edad} años de edad.`);
+//Tengo una can llamada Lulú, ella es de color sal y pimienta, pesa 11 kilos y tiene 9 años de edad.
