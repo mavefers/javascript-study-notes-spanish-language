@@ -90,7 +90,7 @@ while(estudiantes.length>0){
 
 
 //EXAMPLE5:
- 
+
 function saludarEstudiantes(){
     while(estudiantes.length>0){
         var estudiante = estudiantes.shift();
@@ -99,7 +99,18 @@ function saludarEstudiantes(){
 }
     saludarEstudiantes();
 
-//
+
+//EXAMPLE6:
+//NOTE: New Structure.
+const stdns = ["Maria", "Sergio", "Rose", "Daniel"];
+function saludarEstudiantes(){
+    i = 0;
+    while (i < stdns.length) {
+          console.log(`Hi ${stdns[i]}!`);
+          ++i;
+    }
+}
+saludarEstudiantes();
 
 // Loop "do while":
 //                  Es muy similar al loop while, pero ejecutandose primero el bloque 'do', para luego hacer el bloque 'while'.
@@ -238,6 +249,12 @@ var varY = ["element1 (Posicion0)", "element2 (Posicion1)", "element3 (Posicion2
 
 
 //METHODs
+//NOTA1: Todos los metodos de array: modifican, alteran o mutan el array origianl.
+//NOTA2: Los metodos para eliminar un elemento del array, como lo son .shift(); y .pop();, separan el elemento correspondiente, los devuelven (ya sea en una impresión u operación) y después elimina el elemento y actualiza el array original.
+//NOTA3: Los métodos para eliminar y los métodos para agregar, ambos se comportan se diferente manera.
+//NOTA4: Cuando tu imprimes un metodo para eliminar elementos, estos imprimen el elemento que será eliminado.
+//NOTA5: Cuando tú imprimes un método para agregar un elemento, estos imprimen la cantidad de elementos que hay luego de agregar el nuevo elemento.
+
 
 //Length:
 //Sirve para saber cuantos elementos tiene el array.
