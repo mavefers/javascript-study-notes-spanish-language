@@ -55,7 +55,7 @@ console.log(`Tengo una ${objetoLula.ser} llamada ${objetoLula.nombre}, ella es d
 let objeto2 = {
     propiedadNormal: "valor x",
     metodo: function() {
-        console.log(`Interpolación de ${}Aqui se pone una tarea. Se está usando un console.log(), como ejemplo.`)
+        console.log(`Interpolación de ${this.propiedadNormal}Aqui se pone una tarea. Se está usando un console.log(), como ejemplo.`)
     } //No se necesita cerrar con 'punto y coma' (;)
 }
 //Para utilizar las propiedades que se encuentran dentro de los Metodos de Objeto:
