@@ -1,7 +1,7 @@
 //OBJETOS
-//Un objeto es una colección de datos y/o funcionalidades relacionadas.
+//Un objeto es una colección de datos y/o funcionalidades que se relacionan.
 //Es una representacion abstracta de una cosa de la vida real.
-//Los objetos se manejan con propiedades, y las propiedades son una combinacion de palabras clave y valores.
+//Los objetos se manejan con propiedades, y las propiedades son una combinacion de palabras clave y sus valores.
 //Las llaves indican desde donde inicia y hasta donde termina el objeto. {...}
 //Los números de funcionan como valor, se escriben y manejan como datos numéricos, no como string.
 //Al igual que los números, los datos booleanos también se manejan como booleans, no como strings.
