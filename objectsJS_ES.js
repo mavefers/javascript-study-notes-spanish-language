@@ -1,3 +1,6 @@
+//Nota:     Template = Modelo o Plantilla.
+
+
 //OBJETOS
 //Un objeto es una colección de datos y/o funcionalidades que se relacionan.
 //Es una representacion abstracta de una cosa de la vida real.
@@ -47,7 +50,7 @@ console.log(`Tengo una ${objetoLula.ser} llamada ${objetoLula.nombre}, ella es d
 
 //
 
-//Funciones en Objetos, o *Metodos* de Objeto
+//Funciones en Objetos (o *Metodos* de Objeto)
 //Las *propiedades que llevan una funcion como *valor* se le llaman *Metodos*.
 //NOTA IMPORTANTE: Para acceder a un valor específico, primero se necesita escribir el 'nombre del objeto.'
 //                 seguido del nombre de la propiedad o método. Ejemplo: objeto.propiedad;   /   objeto.metodo();
@@ -60,6 +63,8 @@ let objeto2 = {
 }
 //Para utilizar las propiedades que se encuentran dentro de los Metodos de Objeto:
 objeto.metodo();
+
+
 
 //this.
 //Es una variable que hace referencia al 'objeto padre'. - Funciona solo estando dentro de una variable u objeto.
@@ -77,3 +82,23 @@ let miCarro = {
 
 miCarro.detallesDelCarro();
 //Jeep Amarillo
+
+
+////
+
+
+//funcion constructora:
+//Es la manera de hacer objetos de forma automatica.
+//Loop para hacer multi objetos de manera automatica.
+//Generar objetos de forma automatica, menos manual.
+//Para generar varios objetos de manera automatica
+
+//SYNTAX:
+
+function auto(marca, modelo, annio) {
+    this.marca = marca;
+    this.modelo = modelo;
+    this.annio = annio;
+}
+
+var
