@@ -95,10 +95,30 @@ miCarro.detallesDelCarro();
 
 //SYNTAX:
 
+//construir el objeto
+var llamarFuncionXnombre = "x";
+var nombreDescriptivo = new llamarFuncionXnombre("aqui van los parametros"); //new, operador que genera un *objeto* que deriva de otro objeto.
+
+
+//EXAMPLE:
 function auto(marca, modelo, annio) {
     this.marca = marca;
     this.modelo = modelo;
     this.annio = annio;
 }
 
-var
+var autoNuevo = new auto("Tesla", "Model S", 2020);
+var autoNuevo2 = new auto("Jeep", "Raptor", 2021);
+
+
+//EXAMPLE2:
+function anillo(metal, color, peso, annio) {
+    this.metal = metal;
+    this.color = color;
+    this.peso = peso;
+    this.annio = annio
+}
+
+var anillo1 = new anillo("oro", "dorado", 5.5, 2019);
+var anillo2 = new anillo("plata", "plata", 5.3, 2018);
+
