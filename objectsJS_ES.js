@@ -132,7 +132,7 @@ function anillo(metal, color, peso, annio) {
     this.metal = metal;
     this.color = color;
     this.peso = peso;
-    this.annio = annio
+    this.annio = annio;
 }
 
 var anillo1 = new anillo("oro", "dorado", 5.5, 2019);
@@ -169,3 +169,102 @@ let celular1 = new Celular("Xiaomi", "Poco X3 NFC", "Azul", "Plastico", ["FHD+",
 //Diferencia entre 'parametros' y 'argumentos': https://didacticode.com/curso/curso-javascript/leccion/javascript-1-17-funciones-parametros-argumentos/#:~:text=As%C3%AD%2C%20los%20par%C3%A1metros%20son%20los,tanto%2C%20recibe)%20una%20funci%C3%B3n.
 // https://www.google.com/search?q=argumento+o+parametro+diferencia+javascript&sourceid=chrome&ie=UTF-8
 //Funciones constructoras: https://youtu.be/jr1pXcQ_70Y
+
+
+
+
+
+//Ejemplos extras:
+
+var marca = [
+    "Abarth",
+    "Alfa Romeo",
+    "Aston Martin",
+    "Audi",
+    "Bentley",
+    "BMW",	
+   "Cadillac",
+    "Caterham",
+    "Chevrolet",
+    "Citroen",
+    "Dacia",
+    "Ferrari",
+    "Fiat",
+    "Ford",
+    "Honda",
+    "Infiniti",
+    "Isuzu",
+    "Iveco",
+    "Jaguar"   	 	 
+]
+var modelo = [
+    "C-Max",
+    "Fiesta",
+    "Focus",
+    "Mondeo",
+    "Ka",
+    "S-MA",
+   " B-MAX",
+    "Grand C-Max",
+    "Tourneo Custom",
+    "Kuga",
+    "Galaxy",
+    "Grand Tourneo Connect",
+    "Tourneo Connect",
+    "EcoSport",
+    "Tourneo Courier",
+    "Mustang",
+    "Transit Connect",
+    "Edge",
+    "Ka+"
+]
+
+var annio = [
+    "1988",
+    "1989",
+    "1978",
+    "1989",
+    "1928",
+    "1989",
+    "1968",
+    "1989",
+    "1888",
+    "1989",
+    "1288",
+    "1989",
+    "1938",
+    "1989",
+    "1988",
+    "1999",
+    "1983",
+    "1989",
+    "1918"
+]
+function Autos(marca, modelo, annio){
+    this.marca = marca;
+    this.modelo = modelo;
+    this.annio = annio
+}
+for (var i = 0; i < marca.length && i < modelo.length && i < annio.length; i++) {
+    var newAuto = new Autos(marca[i], modelo[i], annio[i]);
+    console.log(newAuto);
+}
+
+
+//
+
+
+let marca = ["Mi", "iPhone", "Galaxy"];
+let modelo = ["11 Pro", "12 Pro", "Z Fold 3 5G"];
+let annio = [2019, 2020, 2022];
+
+function Celulares(marca, modelo, annio) {
+    this.marca = marca;
+    this.modelo = modelo;
+    this.annio = annio
+}
+
+for(i = 0; i < marca.length && i < modelo.length && i < annio.length; i++) {
+    var  celular = new Celulares(marca[i], modelo[i], annio[i]);
+    console.log(celular);
+}
