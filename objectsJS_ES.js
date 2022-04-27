@@ -50,7 +50,7 @@ console.log(`Tengo una ${objetoLula.ser} llamada ${objetoLula.nombre}, ella es d
 
 //
 
-//Funciones en Objetos (o *Metodos* de Objeto)
+//Funciones en Objetos (o *Metodos* de Objeto) // *FUNCIONES CONSTRUCTORAS*
 //Las *propiedades que llevan una funcion como *valor* se le llaman *Metodos*.
 //NOTA IMPORTANTE: Para acceder a un valor específico, primero se necesita escribir el 'nombre del objeto.'
 //                 seguido del nombre de la propiedad o método. Ejemplo: objeto.propiedad;   /   objeto.metodo();
@@ -98,15 +98,16 @@ miCarro.detallesDelCarro();
 //construir el objeto
 var llamarFuncionXnombre = "x";
 var nombreDescriptivo = new llamarFuncionXnombre("aqui van los parametros"); //new, operador que genera un *objeto* que deriva de otro objeto.
+//new, genera una una instancia de la funcion constructora.
 
 
-//EXAMPLE:
+//EXAMPLE-TEMPLATE:
 function auto(marca, modelo, annio) {
     this.marca = marca;
     this.modelo = modelo;
     this.annio = annio;
 }
-
+//EXAMPLE/Construccion de objeto:
 var autoNuevo = new auto("Tesla", "Model S", 2020);
 var autoNuevo2 = new auto("Jeep", "Raptor", 2021);
 
@@ -121,4 +122,8 @@ function anillo(metal, color, peso, annio) {
 
 var anillo1 = new anillo("oro", "dorado", 5.5, 2019);
 var anillo2 = new anillo("plata", "plata", 5.3, 2018);
+
+
+
+//  TEMPLATES de Objetos
 
