@@ -1,4 +1,6 @@
-//Nota:     Template = Modelo o Plantilla.
+//Nota1:     Template = Modelo o Plantilla.
+//Nota2:    Los parámetros son los nombres que aparecen en la definición de una función.
+//          Por su parte, los argumentos son los valores que le pasamos (y que, por tanto, recibe) una función.
 
 
 //OBJETOS
@@ -8,6 +10,7 @@
 //Las llaves indican desde donde inicia y hasta donde termina el objeto. {...}
 //Los números de funcionan como valor, se escriben y manejan como datos numéricos, no como string.
 //Al igual que los números, los datos booleanos también se manejan como booleans, no como strings.
+//--- Las propiedades se separan con *coma*.
 
 //SYNTAX:
 //Están conformados por propiedades y su valor; siendo representados en el ejemplo, las *propiedades* como *palabraClave* y su valor.
@@ -66,7 +69,7 @@ objeto.metodo();
 
 
 
-//this.
+//this. (Objetos Literales)
 //Es una variable que hace referencia al 'objeto padre'. - Funciona solo estando dentro de una variable u objeto.
 
 //EXAMPLE:
@@ -84,6 +87,7 @@ miCarro.detallesDelCarro();
 //Jeep Amarillo
 
 
+
 ////
 
 
@@ -91,9 +95,20 @@ miCarro.detallesDelCarro();
 //Es la manera de hacer objetos de forma automatica.
 //Loop para hacer multi objetos de manera automatica.
 //Generar objetos de forma automatica, menos manual.
-//Para generar varios objetos de manera automatica
+//Para generar varios objetos de manera automatica.
+//--- Las propiedades se separan con punto y coma.
+//El nombre de la propiedad, no tiene nada que ver con el argumento o parametro.
+//Para que la propiedad tenga que ir acorde con el valor, se le pone el mismo nombre, pero no llevan ninguna relacion.
+//En los argumentos no se especifican los tipos de datos, solo son nombres para introducir un dato.
+
 
 //SYNTAX:
+function NombreDeLaFunction(argumento1, argumento2, argumento) {
+    this.marca = marca;
+    this.modelo = modelo;
+    this.annio = annio;
+}
+
 
 //construir el objeto
 var llamarFuncionXnombre = "x";
@@ -125,5 +140,32 @@ var anillo2 = new anillo("plata", "plata", 5.3, 2018);
 
 
 
-//  TEMPLATES de Objetos
+//EXAMPLE3 (OBJETO dentro de una Function Constructora)
+//Template de funcion constructora:
+function Celular(marca, modelo, color, material, tecnologia, red, sO, version) {  //Funcion constructora
+    this.marca = marca;
+    this.modelo = modelo;
+    this.color = color;
+    this.hardware = {       //Objeto que esta dentro de una funcion contructora. /el nombre agrupa el contenido de manera descriptiva.
+        cuerpo: material,
+        pantalla: tecnologia,
+        antena: red,
+    }
+    this.software = {       //Objeto que esta dentro de una funcion constructora. /el nombre agrupa el contenido, de manera descriptiva
+        sO: sO,
+        version: version
+    }
+}
 
+//Crear objeto:
+let celular1 = new Celular("Xiaomi", "Poco X3 NFC", "Azul", "Plastico", ["FHD+", "LCD", "IPS"], ["3G", "4G"], "Android", 12);
+
+
+
+//
+
+
+//Source:
+//Diferencia entre 'parametros' y 'argumentos': https://didacticode.com/curso/curso-javascript/leccion/javascript-1-17-funciones-parametros-argumentos/#:~:text=As%C3%AD%2C%20los%20par%C3%A1metros%20son%20los,tanto%2C%20recibe)%20una%20funci%C3%B3n.
+// https://www.google.com/search?q=argumento+o+parametro+diferencia+javascript&sourceid=chrome&ie=UTF-8
+//Funciones constructoras: https://youtu.be/jr1pXcQ_70Y

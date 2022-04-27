@@ -19,3 +19,12 @@ x = "texto";    //Reasigna
 //"camelCase" es la práctica de escribir varias palabras sin espacios, puntuación o guiones bajos
 //  dejando la primera letra de cada palabra en mayúscula, excepto la primera.
 
+
+
+//
+
+
+
+//function
+//Escribir los nombres de las funciones, con la primera letra en Mayuscula / Cap.
+function Ejemplo() {}
