@@ -103,10 +103,10 @@ miCarro.detallesDelCarro();
 
 
 //SYNTAX:
-function NombreDeLaFunction(argumento1, argumento2, argumento) {
-    this.marca = marca;
-    this.modelo = modelo;
-    this.annio = annio;
+function NombreDeLaFunction(argumento1, argumento2, argumento3) {
+    this.argumento1 = argumento1;
+    this.argumento2 = argumento2;
+    this.argumento3 = argumento3;
 }
 
 
