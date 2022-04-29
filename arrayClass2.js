@@ -56,6 +56,36 @@ var articulosFiltrados2 = articulos.filter(function(articulo) {
 
 //Methods: .map - Crea un nuevo Array con los resultados de la llamada. Funciona como el loop 'for ... of'
 
+// Example:
+//Ejemplo1:
+var numbers = [1, 5, 10, 15];
+var doubles = numbers.map(function(x) { // .map recorre, independientemente, cada elemento del array con el que está trabajando.
+                                        // En cada loop, el elemento de turno se guarda en el parámetro de la función.
+   return x * 2;        // Cada recorrido de un elemento equivale a un ciclo; y en cada ciclo, el elemento que toca se va modificando.
+                        // Y cada elemento modificado pasa a ser guardado como un nuevo elemento de la nueva variable, en este caso, doubles.
+});
+// doubles ahora es [2, 10, 20, 30]
+// numbers sigue siendo [1, 5, 10, 15]
+
+//Ejemplo2:
+var numbers = [1, 4, 9];
+var roots = numbers.map(function(num) {
+    return Math.sqrt(num);
+});
+// roots ahora es [1, 2, 3]
+// numbers sigue siendo [1, 4, 9]
+
+//Ejemplo3:
+var numbers = [3, 6, 13, 18];
+var doubles = numbers.map(x => x - 1);  // Aquí ocurre lo mismo que en *Ejemplo1* y *Ejemplo2*,
+                                        // solo que tiene un diferente sintaxis por el uso de 'arrow function',
+                                        // en reemplazo del 'function' tradicional.
+// doubles is now [2, 5, 12, 17]
+// numbers is still [3, 6, 13, 18]
+
+
+//
+
 
 var articulos = [
     { nombre: "Bici", costo: 3000},
