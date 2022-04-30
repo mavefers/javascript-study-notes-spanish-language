@@ -21,7 +21,11 @@ function Name(argument1, argument2, argument3) {
 //
 
 
+//
 
+
+
+//TEMA PRINCIPAL:
 // Array con Objetos / Objetos dentro de Arrays
 
 //Tema:
@@ -54,10 +58,9 @@ var articulosFiltrados2 = articulos.filter(function(articulo) {
 
 
 
-//Methods: .map - Crea un nuevo Array con los resultados de la llamada. Funciona como el loop 'for ... of'
+//Methods: .map - Crea un nuevo Array con los resultados de la llamada. Funciona como el loop 'for ... of'.
 
-// Example:
-//Ejemplo1:
+// Ejemplo1:
 var numbers = [1, 5, 10, 15];
 var doubles = numbers.map(function(x) { // .map recorre, independientemente, cada elemento del array con el que está trabajando.
                                         // En cada loop, el elemento de turno se guarda en el parámetro de la función.
@@ -84,9 +87,7 @@ var doubles = numbers.map(x => x - 1);  // Aquí ocurre lo mismo que en *Ejemplo
 // numbers is still [3, 6, 13, 18]
 
 
-//
-
-
+//Ejemplo4:
 var articulos = [
     { nombre: "Bici", costo: 3000},
     { nombre: "Tv", costo: 1500},
