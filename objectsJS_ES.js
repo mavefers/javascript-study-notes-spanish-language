@@ -70,7 +70,13 @@ objeto.metodo();
 
 
 //this. (Objetos Literales)
-//Es una variable que hace referencia al 'objeto padre'. - Funciona solo estando dentro de una variable u objeto.
+//Es una variable que hace referencia al 'objeto padre'. - Funciona para la variable u objeto de la cual esta dentro.
+//La arrow function (=>) no 'ben dea' el valor de this; no le pueden cambiar el valor a this, ni le puede otorgar algun valor.
+//Las arrow function no pueden ser owners, porque no tienen un contexto de ejecucion.
+//No cambian el valor de this
+
+//bin dear, significa otorgarle el valor a algo.
+
 
 //EXAMPLE:
 let miCarro = {
