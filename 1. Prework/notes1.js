@@ -29,3 +29,16 @@
 //- Otro navegador muy comun es Firefox que tambien cuenta con 2 versiones
 //Firefox: Version normal
 //Firefox Dev: Version para desarrolladores
+
+
+//
+
+
+//DevTools:
+//Cuando se escribe codigos, tanto en C, microcontroladores, web o lo que sea,
+//el codigo casi siempre no funciona, por lo tanto, hay tecnicas de desbugeo.
+//Estas tecnicas mayormente consisten en dejar pequep;as marcas en tu codigo, al momento de escribirlo,
+//para que el navegador las sepa interpretar y se frene cuando llegue a esa parte.
+
+//Comando para Console del navegador: Ctrl + Shift + I, o F12.
+//
