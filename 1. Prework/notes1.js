@@ -42,3 +42,59 @@
 
 //Comando para Console del navegador: Ctrl + Shift + I, o F12.
 //
+
+//Shortcuts para VS Code: https://static.platzi.com/media/user_upload/VSCode_Atajos-be5fd93f-e2e3-4353-9f93-49237f818a7d.jpg
+
+//Lista de extensiones recomendadas:
+
+//Prettier: Mejora como se visualiza el código y ayuda a que sea más legible
+//Color Highlight :Muestra los colores en .css para verlos.
+//Live Server : Recarga de forma automática el navegador, cuando realizamos algunos cambios.
+//Path Intellisense: Autocompleta rutas de archivos
+//Auto Rename Tag: Permite actualizar al mismo tiempo una pareja de tags de html
+//Material Icon Theme: Muestra iconos para identificar más fácil los tipos de archivo.
+//
+//Extras:
+//Bookmarks : Te permite dejar como separadores en tu código, por ejemplo para encontrar un código que dejaste para después más fácilmente (Crea una pestaña con todos los separadores que pusiste).
+//Code Runner : Ejecutar directamente en la consola de VSC un código, Principalmente para JavaScript
+//Elm Emmet: Te ayuda a escribir código HTML 1000 veces más rápido en una sola línea
+//Google Fonts: Te permite importar fuentes directamente desde el navegador (Sea por link para HTML o import para CSS).
+//WakaTime: Te permite obtener métricas de tu tiempo programando como: Porcentaje de lenguajes que más usaste en la semana, tiempo que estuviste programando, dispositivos, etc.
+//-     Otra extensión que les recomiendo es: Settings Sync
+//Permite hacer un backup de nuestras extensiones instaladas y poder restaurar nuestra configuración en cualquier momento sin necesidad de volver a instalar una x una.
+//Además platzi tiene un blog de como poder configurar la extensión, aquí: https://platzi.com/tutoriales/1650-prework/4407-vs-code-extensions-backup/
+//https://static.platzi.com/media/user_upload/SyncSttngs-cfadefea-4066-4fbb-bc7b-fc0011e5941a.jpg
+//-     Dos extensiones que también serán de muchísima utilidad serían GitLens y indent-rainbown.
+//El primero les dará todas las herramientas de git para tener un mejor orden y llevar mejor el flujo de desarrollo,
+//y el segundo es para orientarnos en las indentaciones y no confundirnos al indentar u ordenar nuestro código… Espero les sea de utilidad.
+//https://static.platzi.com/media/user_upload/extensiones-vscode-75ef6b18-75c4-47e2-872e-285767f681b7.jpg
+//-     Les recomiendo Git Graph. Ahorita no hemos visto mucho sobre Git, pero esta extension les servirá en un futuro.
+//https://static.platzi.com/media/user_upload/Code_Tml30Xpg6q-cee9e47f-1be2-49ce-9493-6bdf8e5235f4.jpg
+//-     Aparte de las extensiones que ya han comentado por aquí, éstas también les podrían servir:
+
+/*Turbo Console Log
+Esta extensión te permite que seleccionando tu variable y con un solo atajo de teclado, generes un línea de console.log con un mensaje significativo y más entendible a la hora de debuggear o examinar tus variables.
+
+Trailing Spaces
+Con esta extensión se resaltarán todos los espacios de más que se te pueden ir al final de una línea. Aunque también puedes habilitar esta funcionalidad directamente en las configuraciones de VSCode.
+
+Project Dashboard
+Te permite organizar tus proyectos por grupos en un dashboard visualmente simple y personalizable.
+
+Todo Tree
+Que filtra todos los comentarios que comiencen con TODO o con FIXME y los muestra en una vista de árbol, desde el que puedes acceder fácilmente a visualizar donde están tus pendientes.
+
+Better Comments
+Pinta de distintos colores tus comentarios según su tipo de acuerdo a como hayas empezado tu comentario, los categoriza en alertas, queries, TODO’s, importantes y puedes personalizar estas categorías o sus colores.
+
+CSS Peek
+Para que puedas echar un vistazo a los estilos CSS de cada clase, id o etiqueta HTML.
+
+Polacode
+Que genera bonitas screenshots de tu código.
+
+
+
+
+
+*/
