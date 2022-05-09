@@ -27,7 +27,10 @@ Ejemplo:
 
 
 
-PRUEBA
+
+REPASO
+
+Variables y operaciones
 
 1.
 Variable:
@@ -76,6 +79,52 @@ let debts = 4000;
 let nombreCompleto = name + ' ' + lastname; || let nombreCompleto = `${name} ${lastname}`;
 let dineroNeto = savedMoney - debts;
 
+
+
+Funciones
+1.
+¿Qué es una función?
+-   Una función es un pedazo de código reutilizable en el que hay un conjunto de instrucciones, 
+este código solo se ejecuta cuando se llama a dicha función.
+
+¿Cuándo me sirve usar una función en mi código?
+-   Cuando hay un pedazo de código que se tiene que repetir constantemente.
+
+¿Cuál es la diferencia entre parámetros y argumentos de una función?
+-   Los parámetros son la lista de variables que ponemos cuando se construye una función.
+Ejemplo:
+    function sum(a, b) {    // a, b son los parámetros
+        return a + b;
+    }
+-   Los argumentos son los valores que se pasan a los pámetros de dicha función, teniendo en cuenta la posición en la que se declara.
+Ejemplo:
+    const result = sum(4, 8);    // viéndolo desde otra perspectiva, a = 4, b = 8
+
+
+
+
+2.
+Convierte el siguiente código en una función, pero,
+cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
+***
+const name = "Juan David";
+const lastname = "Castro Gallego";
+const completeName = name + lastname;
+const nickname = "juandc";
+
+console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+***
+=>
+***
+const name = "Juan David";
+const lastname = "Castro Gallego";
+function datos(completeName, nickname) {
+    console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+}
+datos(name + " " + lastname, "juandc");
+//
+"Mi nombre es Juan David Castro Gallego, pero prefiero que me digas juandc."
+***
 
 
 
