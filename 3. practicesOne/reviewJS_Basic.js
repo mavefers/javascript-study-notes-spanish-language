@@ -1,14 +1,42 @@
 /*
 Repaso - Review
 
+Tipo de valores:
+PRIMITIVOS
+Numero, 10
+Texto, String, cadena de texto, "string"
+Boolean, true o false; sirven para validar si tomamos una decision o no.
+Empty values, valores playsholder, null o undefined
+
+NO PRIMITIVOS o TIPO OBJETO:
+Valor tipo Array, [1,2,3]
+Valor tipo Objeto, {nombre: "Andres"}
+
+Para saber que tipo de valor es un valor, se usa la palabra, typeof.
+Ejemplo:
+    typeof "hola" // "string"
+    typeof "" // string
+    typeof Adfer // "undefined"
+    typeof 39 // "number"
+    typeof true // boolean
+    typeof false // boolean
+    typeof null // object
+    typeof undefined // undefined
+    typeof [] // object
+    typeof {} // object
+
+
+
+PRUEBA
+
 1.
--Variable:
-Una variable es un espacio en memoria, sirve para almacenar todo tipo de dato o valor.
+Variable:
+- Una variable es un espacio en memoria, sirve para almacenar todo tipo de dato o valor.
 Es la representacion de algun lugar en memoria que nosotros vamos a reservar para poder guardar un valor de diferentes tipos.
 
 
--Diferencia entre declarar e iniciar una variable:
-Al declarar una variable, comienzas a crear un espacio en memoria, al cual le das un nombre como identificador. Ejm: 'var pack;'
+Diferencia entre declarar e iniciar una variable:
+- Al declarar una variable, comienzas a crear un espacio en memoria, al cual le das un nombre como identificador. Ejm: 'var pack;'
 Cuando inicializas una variable, estás otorgando un valor a un espacio vacío en memoria, que vendría a ser una variable no inicializada. Ejm: 'var pack = 47;'
 
 
@@ -47,6 +75,8 @@ let debts = 4000;
 4.
 let nombreCompleto = name + ' ' + lastname; || let nombreCompleto = `${name} ${lastname}`;
 let dineroNeto = savedMoney - debts;
+
+
 
 
 */
