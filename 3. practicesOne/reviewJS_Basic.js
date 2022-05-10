@@ -128,4 +128,59 @@ datos(name + " " + lastname, "juandc");
 
 
 
+Condicionales
+1.
+¿Qué es una condicional?
+-   Las condicionales o condicionadores son *reglas* que aplicamos *para poder validar* si algo es *verdadero* o es *falso*,
+    y podamos generar ciertas acciones con eso. Valida el proceso solo si es verdadero; si no es verdadero, no parará nada.
+
+¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
+-   if... else: Si la primera condición es falsa, sucede lo siguiente, si es verdadera, ocurre solo la primera parte.
+    if... else if... else: Si la primera condición es falsa, sucede lo siguiente; si también es falsa, sucede la última parte sí o sí;
+    si la condición en algún punto es verdadera, ese bloque se detiene ahí, y ya no recorre todo el bloque de código.
+    switch... case... break... default: 
+
+¿Puedo combinar funciones y condicionales?
+-   Sí. Todo es posible en JavaScript.
+
+
+2.
+Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
+***
+const tipoDeSuscripcion = "Basic";
+
+switch (tipoDeSuscripcion) {
+   case "Free":
+       console.log("Solo puedes tomar los cursos gratis");
+       break;
+   case "Basic":
+       console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+       break;
+   case "Expert":
+       console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+       break;
+   case "ExpertPlus":
+       console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+       break;
+}
+***
+
+||
+
+const tipoDeSuscripcion = "Basic";
+
+if (tipoDeSuscripcion == "Free" ) {
+    console.log("Solo puedes tomar los cursos gratis");
+} else if (tipoDeSuscripcion == "Basic") {
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+} else if (tipoDeSuscripcion == "Expert") {
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+} else {
+    console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+}
+
+
+3.
+
+
 */
