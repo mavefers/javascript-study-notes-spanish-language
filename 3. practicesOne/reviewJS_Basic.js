@@ -200,12 +200,29 @@ if (suscriptionType === "Expert+") {
 
 RETO:
 
+
+const tipoDeSuscripcion = [
+    {"Basic": "Puedes tomar casi todos los cursos de Platzi durante un mes",
+    "Free": "Solo puedes tomar los cursos gratis",
+    "Expert":"Puedes tomar casi todos los cursos de Platzi durante un año",
+    "Expert+":"Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año"}
+ ];
+
+const plan = "Basic";
+
+if (tipoDeSuscripcion[0][plan] ){
+    console.log(tipoDeSuscripcion[0][plan]);
+}else{
+    console.log("No tienes ningun tipo de suscripción")
+}
+
+***
 var planes = ["Free", "Basic", "Expert", "ExpertPlus"];
 function losPlanes(miPlan) {
     for(i=0; planes[1]; i++) {
-        
+        element = planes[i]
     }
 }
-
+***
 
 */
