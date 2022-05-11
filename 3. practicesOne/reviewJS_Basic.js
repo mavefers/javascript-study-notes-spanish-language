@@ -181,6 +181,31 @@ if (tipoDeSuscripcion == "Free" ) {
 
 
 3.
+const tipoDeSuscripcion = "Basic";
+
+if (tipoDeSuscripcion == "Free" ) {
+    console.log("Solo puedes tomar los cursos gratis");
+}
+if (tipoDeSuscripcion == "Basic") {
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+}
+if (tipoDeSuscripcion == "Expert") {
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+}
+if (suscriptionType === "Expert+") {
+    console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+}
+
+
+
+RETO:
+
+var planes = ["Free", "Basic", "Expert", "ExpertPlus"];
+function losPlanes(miPlan) {
+    for(i=0; planes[1]; i++) {
+        
+    }
+}
 
 
 */
