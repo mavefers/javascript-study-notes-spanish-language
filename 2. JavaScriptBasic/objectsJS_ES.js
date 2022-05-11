@@ -16,7 +16,7 @@
 //Están conformados por propiedades y su valor; siendo representados en el ejemplo, las *propiedades* como *palabraClave* y su valor.
 var objeto = {
     palabraClave: "valor",
-    palabraClave2: 40,
+    palabraClave2: 40, //coloqué un número para variar
     palabraClave3: "valor 3"
 };
 
