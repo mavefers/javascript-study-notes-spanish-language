@@ -224,5 +224,82 @@ function losPlanes(miPlan) {
     }
 }
 ***
+***
+
+const tipoDeSuscripcion = [
+    {"Basic": "Puedes tomar casi todos los cursos de Platzi durante un mes",
+    "Free": "Solo puedes tomar los cursos gratis",
+    "Expert":"Puedes tomar casi todos los cursos de Platzi durante un año",
+    "Expert+":"Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año"}
+ ];
+
+const plan = "Basic";
+
+if (tipoDeSuscripcion[0][plan] ){
+    console.log(tipoDeSuscripcion[0][plan]);
+}else{
+    console.log("No tienes ningun tipo de suscripción")
+}
+VM80:11 Puedes tomar casi todos los cursos de Platzi durante un mes
+undefined
+tipoDeSuscripcion[0][plan]
+'Puedes tomar casi todos los cursos de Platzi durante un mes'
+const tipoDe = [
+    {"Basic": "Puedes tomar casi todos los cursos de Platzi durante un mes",
+    2: "Solo puedes tomar los cursos gratis",
+    6:"Puedes tomar casi todos los cursos de Platzi durante un año",
+    "x":"Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año"},
+    { nombre: "Bici", costo: 3000},
+    { nombre: "Tv", costo: 1500},
+    { nombre: "Libro", costo: 320},
+    { nombre: "Celular", costo: 10000},
+    { nombre: "Laptop", costo: 20000},
+    { nombre: "Audifonos", costo: 1700},
+ ];
+undefined
+tipoDe[2]['nombre']
+'Tv'
+tipoDe[2]
+{nombre: 'Tv', costo: 1500}
+tipoDe[2].costo
+1500
+tipoDe[2].nombre
+'Tv'
+const xi = nombre;
+VM512:1 Uncaught ReferenceError: nombre is not defined
+    at <anonymous>:1:12
+(anonymous) @ VM512:1
+const xi = 'nombre';
+undefined
+const xx = 'nombre';
+undefined
+tipoDe[2][xx]
+'Tv'
+tipoDe[1][nombre];
+VM704:1 Uncaught ReferenceError: nombre is not defined
+    at <anonymous>:1:11
+(anonymous) @ VM704:1
+tipoDe[1]['nombre'];
+'Bici'
+tipoDe[0][2];
+'Solo puedes tomar los cursos gratis'
+tipoDe[0]['2'];
+'Solo puedes tomar los cursos gratis'
+tipoDe[0]["2"];
+'Solo puedes tomar los cursos gratis'
+tipoDe[0][`2`];
+'Solo puedes tomar los cursos gratis'
+
+
+***
+
+
+Quiere decir que tipoDeSuscripcion[0][plan] es un solo código independiente, siendo tipoDeSuscripcion[0] una referencia a un objeto, y [plan], siendo una referencia a una propiedad que a su vez hace referencia al valor que lleva dentro, que es similar a la propiedad que tenemos dentro del objeto tipoDeSuscripcion[0] para que asi conecten como iguales y poder obtener el valor de “Basic”.
+O sea que el valor “Basic” de la variable plan, ya no estaría actuando como valor, sino como una propiedad… Interesante…
+Muchas gracias!!
+
+Estuve experimentando y me percaté que al declararlo como una sintaxis de array, `tipoDeSuscripcion[0]['Basic']`, es necesario realizarlo bajo string 'Basic', así esa propiedad no sea un string, sino una variable. Algo similar pasa con los números, que esos sí pueden ser declarados como números, como también como cualquier tipo de de cadena de texto, string, como [2], ['2'], ["2"] o [`2`]; todos son iguales, o es lo que veo, que todos funcionan.
+
+
 
 */

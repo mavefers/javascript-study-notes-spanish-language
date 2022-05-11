@@ -44,7 +44,7 @@ var articulos = [
     { nombre: "Audifonos", costo: 1700},
 ];
 
-var grupoArticulos = articulos.filter(function(articulos) {
+var grupoArticulos = articulos.filter(function(articulo) {
     return articulo.costos <= 1000
 });
 
