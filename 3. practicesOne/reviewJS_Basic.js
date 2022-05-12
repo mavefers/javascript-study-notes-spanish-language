@@ -265,12 +265,8 @@ tipoDe[2].costo
 1500
 tipoDe[2].nombre
 'Tv'
-const xi = nombre;
-VM512:1 Uncaught ReferenceError: nombre is not defined
-    at <anonymous>:1:12
-(anonymous) @ VM512:1
-const xi = 'nombre';
-undefined
+
+
 const xx = 'nombre';
 undefined
 tipoDe[2][xx]
@@ -301,5 +297,36 @@ Muchas gracias!!
 Estuve experimentando y me percaté que al declararlo como una sintaxis de array, `tipoDeSuscripcion[0]['Basic']`, es necesario realizarlo bajo string 'Basic', así esa propiedad no sea un string, sino una variable. Algo similar pasa con los números, que esos sí pueden ser declarados como números, como también como cualquier tipo de de cadena de texto, string, como [2], ['2'], ["2"] o [`2`]; todos son iguales, o es lo que veo, que todos funcionan.
 
 
+***
 
+
+En los objetos, las propiedades del declaradas con el mismo nombre reemplazan a la propiedad anterior que llevaba el mismo nombre.
+
+Por ejemplo:
+let colores = [
+    {
+        color: "Azul",
+        color: "Rojo",
+        color: "Naranja"
+    },
+]
+//- Aquí podemos observar que la primera propiedad que lleva el valor "Azul",
+    es reemplazada por la nueva propiedad con el mismo nombre, pero que lleva un valor distinto, "Rojo".
+    Y esta propiedad declarada, es reemplazada por una última propiedad del mismo nombre, que lleva un diferente valor, "Naranja".
+//- Quiere decir que, por más que veamos tres propiedades, en el retorno solo existirá la última propiedad.
+
+//- Lo correcto es lo siguiente:
+let colores = [
+    {
+        color1: "Azul",
+        color2: "Rojo",
+        color3: "Naranja"
+    },
+]
+
+***
+
+Hay dos maneras de obtener un valor de un objeto, por su propiedad:
+-   Usando la sintaxis de objeto -   nombreObjeto[0].propidad;
+-   Usando la sintaxis de array -    nombreObjeto[0][propiedad];
 */
