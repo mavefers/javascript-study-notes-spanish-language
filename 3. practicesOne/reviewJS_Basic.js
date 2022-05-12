@@ -294,13 +294,17 @@ Quiere decir que tipoDeSuscripcion[0][plan] es un solo código independiente, si
 O sea que el valor “Basic” de la variable plan, ya no estaría actuando como valor, sino como una propiedad… Interesante…
 Muchas gracias!!
 
-Estuve experimentando y me percaté que al declararlo como una sintaxis de array, `tipoDeSuscripcion[0]['Basic']`, es necesario realizarlo bajo string 'Basic', así esa propiedad no sea un string, sino una variable. Algo similar pasa con los números, que esos sí pueden ser declarados como números, como también como cualquier tipo de de cadena de texto, string, como [2], ['2'], ["2"] o [`2`]; todos son iguales, o es lo que veo, que todos funcionan.
+Estuve experimentando y me percaté que al declararlo como una sintaxis de array,
+`tipoDeSuscripcion[0]['Basic']`, es necesario realizarlo bajo string 'Basic',
+así esa propiedad no sea un string, sino una variable. Algo similar pasa con los números,
+que sí pueden ser declarados como números/number, como también pueden ser declarados como
+cualquier tipo de cadena de texto, string, como [2], ['2'], ["2"] o [`2`]; todos cumplen la misma función.
 
 
 ***
 
 
-En los objetos, las propiedades del declaradas con el mismo nombre reemplazan a la propiedad anterior que llevaba el mismo nombre.
+En los objetos, las propiedades declaradas con el mismo nombre, reemplazan a la propiedad anterior que llevaba el mismo nombre.
 
 Por ejemplo:
 let colores = [
@@ -329,4 +333,11 @@ let colores = [
 Hay dos maneras de obtener un valor de un objeto, por su propiedad:
 -   Usando la sintaxis de objeto -   nombreObjeto[0].propidad;
 -   Usando la sintaxis de array -    nombreObjeto[0][propiedad];
+
+
+
+Ciclos:
+1.
+
+
 */
