@@ -443,13 +443,47 @@ Responde las siguientes preguntas en la sección de comentarios:
 // Son varios elementos guardados en una sola variable, con la que se puede trabajar con ella.
 
 - ¿Qué es un objeto?
+//Un objeto es una colección de datos y/o funcionalidades que se relacionan.
+//Es una representacion abstracta de una cosa de la vida real.
+//Los objetos se manejan con propiedades, y las propiedades son una combinacion de palabras clave y sus valores.
+//Las llaves indican desde donde inicia y hasta donde termina el objeto. {...}
+//Los números que se declaran como valor, se escriben y manejan como datos numéricos / numbers, no como string.
+//Al igual que los números, los datos booleanos también se manejan como booleans, no como strings.
+//--- Las propiedades/elementos se separan con *coma*.
 
 
 - ¿Cuándo es mejor usar objetos o arrays?
+//Un objeto, cuando se quiera modelar algo que exista en la vida real, como un coche.
+//Un array cuando se tenga un conjunto de datos finitos que se quiera guardar.
 
 
 - ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+Sí, ambos se pueden contener, ambos se pueden fusionar.
 
+
+2.
+Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
+var array = [1,2,3,4,5];
+function primerElemento(array){
+	console.log(array[0]);
+} 
+
+
+
+3.
+Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno
+(no se vale imprimir el array completo).
+
+var array = [1,2,3,4,5];
+array.forEach(function(element)){
+	console.log(element);
+}
+
+
+
+4.
+Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno
+(no se vale imprimir el objeto completo).
 
 
 */
