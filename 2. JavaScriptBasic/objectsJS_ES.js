@@ -8,9 +8,9 @@
 //Es una representacion abstracta de una cosa de la vida real.
 //Los objetos se manejan con propiedades, y las propiedades son una combinacion de palabras clave y sus valores.
 //Las llaves indican desde donde inicia y hasta donde termina el objeto. {...}
-//Los números funcionan como valor, se escriben y manejan como datos numéricos, no como string.
+//Los números que se declaran como valor, se escriben y manejan como datos numéricos / numbers, no como string.
 //Al igual que los números, los datos booleanos también se manejan como booleans, no como strings.
-//--- Las propiedades se separan con *coma*.
+//--- Las propiedades/elementos se separan con *coma*.
 
 //SYNTAX:
 //Están conformados por propiedades y su valor; siendo representados en el ejemplo, las *propiedades* como *palabraClave* y su valor.
