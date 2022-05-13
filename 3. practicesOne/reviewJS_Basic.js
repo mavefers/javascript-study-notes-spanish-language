@@ -341,8 +341,9 @@ Ciclos:
 -¿Qué es un ciclo?
 Es un pedazo de código que se automatiza para que se repita.
 -¿Qué tipos de ciclos existen en JavaScript?
-for, for of, while, do...while, for...in, for...of
-- Instrucciones: continue
+for, for of, while, do...while, for...of
+- Instrucciones: continue, for...in
+
 
 *continue:
 La instrucción continue se puede usar para reiniciar un while, do-while, for, o declaración label.
@@ -384,6 +385,70 @@ while (i <= 5) {
 //12
 //18
 
+
+-   ¿Qué es un ciclo infinito y por qué es un problema?
+Un ciclo infinito es un ciclo cuya condición nunca termina porque nunca llega a ser *false*, siempre va a tener una condición *true*
+por ende, siempre se va a continuar iniciando el ciclo.
+
+
+EJEMPLO: Las declaraciones en el siguiente bucle while se ejecutan indefinidamente porque la condición nunca se vuelve false:
+
+while (true) {
+  console.log('¡Hola, mundo!');
+}
+//¡Hola, mundo!
+//¡Hola, mundo!
+//¡Hola, mundo!
+//...
+
+
+
+2.
+Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
+
+2.1
+for (let i = 0; i < 5; i++) {
+    console.log("El valor de i es: " + i);
+}
+
+///
+
+let i = 0;
+while (i < 5) {
+    console.log("El valor de i es: " + i);
+    i++;
+}
+
+2.2
+for (let i = 10; i >= 2; i--) {
+    console.log("El valor de i es: " + i);
+}
+
+///
+
+let i = 10;
+while (i >= 2) {
+    console.log("El valor de i es: " + i);
+    i--;
+}
+
+
+
+Listas:
+1.
+Responde las siguientes preguntas en la sección de comentarios:
+- ¿Qué es un array?
+// Es una estructura de datos en la cual puedes almacenar en slots, espacios o huecos, diversos datos, como variables, objetos, otras estructuras de datos, etc.
+// Es como una comoda donde en cada cajon puedes guardar, un numero, un texto, otro array, otro objeto, etc.
+// Son varios elementos guardados en una sola variable, con la que se puede trabajar con ella.
+
+- ¿Qué es un objeto?
+
+
+- ¿Cuándo es mejor usar objetos o arrays?
+
+
+- ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
 
 
 
