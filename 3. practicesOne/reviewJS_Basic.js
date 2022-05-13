@@ -338,6 +338,53 @@ Hay dos maneras de obtener un valor de un objeto, por su propiedad:
 
 Ciclos:
 1.
+-¿Qué es un ciclo?
+Es un pedazo de código que se automatiza para que se repita.
+-¿Qué tipos de ciclos existen en JavaScript?
+for, for of, while, do...while, for...in, for...of
+- Instrucciones: continue
+
+*continue:
+La instrucción continue se puede usar para reiniciar un while, do-while, for, o declaración label.
+
+Cuando utilizas continue sin una etiqueta, finaliza la iteración actual del while, do-while o for y continúa la ejecución del bucle con la siguiente iteración. A diferencia de la instrucción break, continue no termina la ejecución del bucle por completo. En un bucle while, vuelve a la condición. En un bucle for, salta a la expresión-incremento.
+Cuando usas continue con una etiqueta, se aplica a la declaración de bucle identificada con esa etiqueta.
+
+EJEMPLO:
+let i = 0;
+let n = 0;
+while (i < 5) {
+  i++;
+  if (i === 3) {
+    continue;
+  }
+  n += i;
+  console.log(n);
+}
+//1
+//3
+//7
+//12
+undefined
+
+EJEMPLO:
+let i = 0;
+let n = 0;
+while (i <= 5) {
+  i++;
+  if (i === 3) {
+    continue;
+  }
+  n += i;
+  console.log(n);
+}
+//1
+//3
+//7
+//12
+//18
+
+
 
 
 */
