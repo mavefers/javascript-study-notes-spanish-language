@@ -50,22 +50,56 @@ Commands:
     mkdir 'sirve para crear una caperta'
         -Se pueden crear carpetas con permisos de administrador, ejm: sudo mkdir carpeta1
         -Como tambien, sin permiso de administrador, ejemplo: mkdir carpeta2
+        -Se puede crear un directorio, dentro de otro directorio, ejemplo: mkdir carpeta2/carpeta21
+
+    mkdir -p
+        -Sirve para crear un directorio, entre dos directorios existentes. Ejemplo: mkdir -p carpeta2/carpetaX/carpeta21
     
-        rmdir 'sirve para borrar carpetas'
+    rmdir
+        -sirve para borrar carpetas'
     
-    touch 'sirve para crear un archivo.
-        -Se necesita declarar tambien la extension del archivo, al momento de crearlo, ejemplo: touch texto.txt
+    touch
+        -sirve para crear un archivo.
+        -Se necesita tambien declarar la extension del archivo al momento de crearlo, ejemplo: touch texto.txt
     
-        mv 'sirve para mover un elemento, archivo o carpeta, a otra direccion'
+    mv
+        -sirve para mover un elemento, archivo o carpeta, a otra direccion'
         -Sintaxis: mv carpeta/archivo/elemento carpetaDestino
     
     explorer.exe 'abre una ventana del explorador de archivos de la PC, en la seccion de Acceso rapido'
 
-    explorer.exe . 'abre el explorador de archivos en la carpeta actual en la que estamos trabajando en la Terminal de Ubuntu'
+    explorer.exe .
+        -abre el explorador de archivos en la carpeta actual en la que estamos trabajando en la Terminal de Ubuntu'
 
-    code . 'sirve para instalar una version remota de Visual Studio Code, dentro de nuestro WSL2'.
+    code .
+        -sirve para instalar una version remota de Visual Studio Code, dentro de nuestro WSL2'.
 
-    cat 'sirve para ver el contenido de un archivo, sin la necesidad de abrirlo'
+    cat 
+        -sirve para ver el contenido de un archivo, sin la necesidad de abrirlo'
         -Sintaxis: cat index.html
 
+    man 'sirve como manual para revisar el uso de cada comando. Ejemplo: man mv'
+
+    sudo apt-get update 'sirve para revisar si hay actualizaciones disponibles'
+
+    sudo apt-get upgrade 'sirve para actualizar el sistema operativo Ubuntu'
+        -Ubuntu/Debian usan "Gestor de Paquetes", son como tiendas que almacenan repositorios de "Dependencias"
+        -"Repositorio de Dependencia", es donde almacenan todos los software de todo tipo, disponibles para instalar en la OS.
+            -Para consultar el Repositorio de Dependencias se ejecuta con este comando: sudo apt-get
+
+    sudo apt install [name]
+        -Sirve para instalar algun reporsitorio o programa.
+
+
+//
+
+NodeJS
+    -Es un "JavaScript runtime environment", un ambiente de ejecucion para poder escribir JavaScript.
+    -Sirve para el desarrollo Backend.
+    -Sirve para ejecutar instalaciones de dependecia para nuestros proyectos.
+
+npm
+    -Node Package Managment, es el manejador de paquetes de NodeJS.
+    -Actua como "apt", son repositorios que contienen que parece una tienda de librerias o dependencias.
+    -Es la herramienta default para descargar cosas.
 -->
