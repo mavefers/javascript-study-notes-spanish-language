@@ -34,7 +34,6 @@
     ls, sirve para ver los elementos que contiene el directorio actual en el que te encuentras.
     /$ 'significa que estamos en el directorio root. DIRECTORIO RAIZ DE LA INSTALACION DE LINUX. Es la carpeta principal.
     cd . 'sirve para ver y actualizar tu posicion en el directorio en el que te encuentras.
-    mkdir '  
 
     
 Recomendacion:
@@ -55,10 +54,21 @@ Commands:
     mkdir -p
         -Sirve para crear un directorio, entre dos directorios existentes. Ejemplo: mkdir -p carpeta2/carpetaX/carpeta21
     
-    rmdir
-        -sirve para borrar carpetas'
+    rm [archivo.extension]
+        -sirve para borrar cualquier archivo.
+        -Se necesita tambien declarar la extension del archivo al momento de borrarlo, ejemplo: rm texto.txt
+        -En su mayoria, se necesita estar dentro del directorio en el que se encuentra el archivo, de lo contrario, necesitamos usar una ruta compleja/compuesta, ejemplo: rm dir1/dir2/texto.txt
     
-    touch
+    rm -d [nombre de la carpeta vacia]
+        -sirve para borrar una carpeta vacia.
+
+    rm -rf [nombre de la carpeta que lleva contenido adentro]
+        -sirve para borrar un directorio con contenido adentro.
+
+    rmdir
+        -sirve para borrar carpetas en general. (No es recomendado usarlo)
+    
+    touch [archivo.extension]
         -sirve para crear un archivo.
         -Se necesita tambien declarar la extension del archivo al momento de crearlo, ejemplo: touch texto.txt
     
