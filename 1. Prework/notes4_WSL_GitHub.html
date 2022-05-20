@@ -55,13 +55,25 @@ ssh-keygen
 eval "$(ssh-agent -s)"
     Es un gestor que ayuda a gentionar nuestras claves.
     -Confirma la presencia de un agente corriendo para gestionar la coneccion entre Ubuntu/Linux y GitHub.
+    -Sirve para añadir la llave ssh al agente.
 
 ssh-copy-id [my e-mail]
     Instruccion para agarrar la llave publica y copiarla. / Agrega la llave privada, al servidor.
 
 ssh-add ~/.ssh/id_rsa
-    Es otra alternativa para agregar la llave privada, al servidor.
+***  Es otra alternativa para agregar la llave privada, al servidor. 
 
+//
+
+Para acceder a la llave ssh y poder copiarlo para asi poder conectarlo con GitHub: Necesita ir a la ruta,
+    cd ~/.ssh   
+>luego
+    cat id_rsa.pub
+        -para asi poder abrir el archivo dentro de la Terminal, y visualizar el contenido.
+        -Este archivo contiene la llave.
+
+Luego, copiamos la llave, vamos a la web de GitHub, en la configuracion, y en la seccion 'SSH and GPS keys' https://github.com/settings/keys
+-Abrimos una nueva key, y pegamos la llave/key, escribimos un titulo y guardamos.
 
 SUGERENCIA IMPORTANTE
     NUNCA se debe compartir la llave, ni la llave pública, ni la llave privada.
