@@ -32,7 +32,10 @@ Se puede retroceder "el tiempo" de las ramas desarrolladas, para deshacer un err
 
 //
 INSTRUCCION:
-ssh-keygen -t rsa -b 4096
+
+Paga generar la key/llave para poder conectar Ubuntu-Linux a nuestra cuenta de Linux:
+
+ssh-keygen -t rsa -b 4096 -C "my e-mail"
 
 ssh-keygen
     sirve para generar una llave 'ssh', instroducir el codigo de seguridad para poder conectarnos a GitHub.
@@ -43,4 +46,19 @@ ssh-keygen
 
 -b 4096
     Sirve para declarar la cantidad de bits que se usara, '4096' es la cantidad de bits. 
+
+
+
+//
+
+
+eval "$(ssh-agent -s)"
+    Es un gestor que ayuda a gentionar nuestras claves.
+    -Confirma la presencia de un agente corriendo para gestionar la coneccion entre Ubuntu/Linux y GitHub.
+
+ssh-copy-id [my e-mail]
+    Instruccion para agarrar la llave publica y copiarla. / Agrega la llave privada, al servidor.
+
+ssh-add ~/.ssh/id_rsa
+    Es otra alternativa para agregar la llave privada, al servidor.
 -->
