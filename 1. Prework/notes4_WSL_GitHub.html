@@ -31,9 +31,10 @@ Se puede retroceder "el tiempo" de las ramas desarrolladas, para deshacer un err
 
 
 //
-INSTRUCCION:
 
-Paga generar la key/llave para poder conectar Ubuntu-Linux a nuestra cuenta de Linux:
+INSTRUCCION:
+Para generar la key/llave para poder conectar Ubuntu-Linux a nuestra cuenta de Linux:
+
 
 ssh-keygen -t rsa -b 4096 -C "my e-mail"
 
@@ -45,17 +46,20 @@ ssh-keygen
     protocolo de encriptacion, 'rsa' es el tipo de protocolo que se esta usando.
 
 -b 4096
-    Sirve para declarar la cantidad de bits que se usara, '4096' es la cantidad de bits. 
+    Sirve para declarar la cantidad de bits que se usara, '4096' es la cantidad de bits.
+
+-C [my e-mail]
+    Es el protocolo para declarar un e-mail.
+    Se escribe en mayuscula.
 
 
 
 //
 
-
-eval "$(ssh-agent -s)"
-    Es un gestor que ayuda a gentionar nuestras claves.
-    -Confirma la presencia de un agente corriendo para gestionar la coneccion entre Ubuntu/Linux y GitHub.
-    -Sirve para añadir la llave ssh al agente.
+Gestor que ayuda a gentionar nuestras claves:
+    eval "$(ssh-agent -s)"
+        -Evalua y confirma la presencia de un agente corriendo para gestionar la coneccion entre Ubuntu/Linux y GitHub.
+        -Sirve para añadir la llave ssh al agente.
 
 ssh-copy-id [my e-mail]
     Instruccion para agarrar la llave publica y copiarla. / Agrega la llave privada, al servidor.
